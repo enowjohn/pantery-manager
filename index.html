@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantry Manager - Track Food, Reduce Waste, Save Money</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥫</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo/Copilot_20260423_085317.png" alt="Pantry Manager Logo" class="logo-image">
+                <span class="logo-text">Pantry Manager</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Stop Wasting Food, Start Saving Money</h1>
+                        <p class="hero-subtitle">
+                            Food prices are up 25% globally. Families throw away $1,500 worth of food annually. 
+                            Take control with智能 pantry management.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">25%</span>
+                                <span class="stat-label">Food Price Increase</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$1.5K</span>
+                                <span class="stat-label">Annual Food Waste</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Food Saved</span>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="scrollToSection('demo')">Try Demo</button>
+                            <button class="btn btn-secondary" onclick="scrollToSection('features')">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="pantry-illustration">
+                            <div class="shelf">
+                                <div class="item item-1" data-expiry="3 days">🥛</div>
+                                <div class="item item-2" data-expiry="1 week">🍞</div>
+                                <div class="item item-3" data-expiry="2 days">🥕</div>
+                                <div class="item item-4" data-expiry="5 days">🧀</div>
+                            </div>
+                            <div class="expiry-indicator">
+                                <span>Expiry Tracking</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="section problem">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Problem We're Solving</h2>
+                    <p class="section-subtitle">Real challenges that affect millions of families worldwide</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">📈</div>
+                        <h3>Rising Food Costs</h3>
+                        <p>Food prices increased 25% globally, making every purchase count more than ever.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">💸</div>
+                        <h3>Financial Waste</h3>
+                        <p>The average family throws away $1,500 worth of food each year due to spoilage.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🤔</div>
+                        <h3>Lack of Visibility</h3>
+                        <p>People buy food without knowing what they already have, leading to duplicates and waste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Smart Features for Smart Kitchens</h2>
+                    <p class="section-subtitle">Everything you need to manage your pantry efficiently</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3>Inventory Tracking</h3>
+                        <p>Keep real-time records of what you have, quantities, and locations in your kitchen.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Expiry Monitoring</h3>
+                        <p>Automatic alerts when items are approaching expiration, with color-coded priority system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Recipe Suggestions">
+                        </div>
+                        <h3>Recipe Suggestions</h3>
+                        <p>AI-powered recipe recommendations based on ingredients that need to be used soon.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Track your waste reduction, savings, and consumption patterns over time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛒</div>
+                        <h3>Smart Shopping Lists</h3>
+                        <p>Generate shopping lists based on actual needs and consumption patterns.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Access</h3>
+                        <p>Access your pantry from anywhere with our responsive mobile-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="section recipes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Delicious Recipes to Reduce Waste</h2>
+                    <p class="section-subtitle">Transform your expiring ingredients into amazing meals</p>
+                </div>
+                <div class="recipes-grid">
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1473093296553-77b5d6c004d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pasta Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Creamy Pasta</h4>
+                            <p>15 min • Easy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Salad Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Fresh Salad</h4>
+                            <p>10 min • Healthy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1547592166-55ac9be6876e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Soup Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Vegetable Soup</h4>
+                            <p>25 min • Nutritious</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1599984847564-3378e2e6e6a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Stir Fry Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Chicken Stir Fry</h4>
+                            <p>20 min • Protein</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pizza Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Homemade Pizza</h4>
+                            <p>30 min • Family</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1568901343475-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Burger Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Gourmet Burger</h4>
+                            <p>20 min • Comfort</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1604907816481-919c8b6a823b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Eru Recipe">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Eru (African Soup)</h4>
+                            <p>45 min • Traditional</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1606491956689-2c8b8c23ec6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Jollof Rice">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Jollof Rice</h4>
+                            <p>35 min • African</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1547592166-55ac9be6876e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Egusi Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Egusi Soup</h4>
+                            <p>40 min • Nigerian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fufu">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Fufu & Soup</h4>
+                            <p>30 min • West African</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Suya">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Suya (Spicy Meat)</h4>
+                            <p>25 min • Street Food</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Banga Rice">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Banga Rice</h4>
+                            <p>50 min • Delta</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1604907816481-919c8b6a823b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Moi Moi">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Moi Moi</h4>
+                            <p>60 min • Protein</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1546823998-b8c8a1ff6568?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ogbono Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Ogbono Soup</h4>
+                            <p>35 min • Draw Soup</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Okra Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Okra Soup</h4>
+                            <p>30 min • Healthy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1604500769926-02d2b42c8741?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Afang Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Afang Soup</h4>
+                            <p>45 min • Cross River</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bitter Leaf Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Bitter Leaf Soup</h4>
+                            <p>40 min • Medicinal</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pounded Yam">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Pounded Yam</h4>
+                            <p>25 min • Staple</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1546823998-b8c8a1ff6568?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coconut Rice">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Coconut Rice</h4>
+                            <p>35 min • Tropical</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1604907816481-919c8b6a823b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vegetable Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Mixed Vegetable Soup</h4>
+                            <p>30 min • Vegan</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fried Rice">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Fried Rice</h4>
+                            <p>25 min • Asian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1596797048593-2a8e91b1b3bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Curry Chicken">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Curry Chicken</h4>
+                            <p>35 min • Indian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tacos">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Tacos</h4>
+                            <p>20 min • Mexican</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1579584422900-75023d004c2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sushi Rolls">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Sushi Rolls</h4>
+                            <p>45 min • Japanese</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1467453678174-768ec28dc5d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Grilled Salmon">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Grilled Salmon</h4>
+                            <p>30 min • Seafood</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1599984847564-3378e2e6e6a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Beef Stir Fry">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Beef Stir Fry</h4>
+                            <p>25 min • Quick</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1572441713189-3c9a3e4c5c2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mushroom Risotto">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Mushroom Risotto</h4>
+                            <p>40 min • Italian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Thai Green Curry">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Thai Green Curry</h4>
+                            <p>35 min • Spicy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1512058764152-5bc668a28534?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Greek Salad">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Greek Salad</h4>
+                            <p>15 min • Mediterranean</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1529692236671-1d5155325fcd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="BBQ Ribs">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>BBQ Ribs</h4>
+                            <p>90 min • American</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03246964d8c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pad Thai">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Pad Thai</h4>
+                            <p>30 min • Thai</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6aa7b822bb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Caesar Salad">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Caesar Salad</h4>
+                            <p>20 min • Classic</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1571091718767-18b5b14555add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fish Tacos">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Fish Tacos</h4>
+                            <p>25 min • Coastal</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Veggie Pizza">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Veggie Pizza</h4>
+                            <p>35 min • Vegetarian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1546548970-7e85490e0d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lentil Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Lentil Soup</h4>
+                            <p>40 min • Healthy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chicken Wings">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Chicken Wings</h4>
+                            <p>45 min • Party</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Quinoa Bowl">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Quinoa Bowl</h4>
+                            <p>25 min • Superfood</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Shrimp Pasta">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Shrimp Pasta</h4>
+                            <p>30 min • Seafood</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1526958867505-91e19e66d68a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Falafel">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Falafel</h4>
+                            <p>35 min • Middle Eastern</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Beef Tacos">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Beef Tacos</h4>
+                            <p>30 min • Mexican</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1546548970-7e85490e0d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chicken Noodle Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Chicken Noodle Soup</h4>
+                            <p>45 min • Comfort</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Stir Fried Noodles">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Stir Fried Noodles</h4>
+                            <p>20 min • Asian</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Veggie Wrap">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Veggie Wrap</h4>
+                            <p>15 min • Light</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1571091718767-18b5b14555add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Miso Soup">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Miso Soup</h4>
+                            <p>15 min • Japanese</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1604907816481-919c8b6a823b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chili Con Carne">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Chili Con Carne</h4>
+                            <p>60 min • Hearty</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pancakes">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Pancakes</h4>
+                            <p>20 min • Breakfast</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Omelette">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Omelette</h4>
+                            <p>10 min • Quick</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Smoothie Bowl">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>Smoothie Bowl</h4>
+                            <p>15 min • Healthy</p>
+                        </div>
+                    </div>
+                    <div class="recipe-item">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="French Toast">
+                        </div>
+                        <div class="recipe-info">
+                            <h4>French Toast</h4>
+                            <p>20 min • Breakfast</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="section demo">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Interactive Demo</h2>
+                    <p class="section-subtitle">Try the pantry manager right here, right now</p>
+                </div>
+                <div class="demo-container">
+                    <div class="demo-controls">
+                        <button class="btn btn-primary" onclick="addItem()">Add Item</button>
+                        <button class="btn btn-secondary" onclick="generateRecipe()">Get Recipe</button>
+                        <button class="btn btn-outline" onclick="clearPantry()">Clear All</button>
+                    </div>
+                    <div class="pantry-demo">
+                        <div class="pantry-header">
+                            <h3>My Pantry</h3>
+                            <div class="pantry-stats">
+                                <span id="item-count">0 items</span>
+                                <span id="expiring-count">0 expiring soon</span>
+                            </div>
+                        </div>
+                        <div class="pantry-items" id="pantry-items">
+                            <div class="empty-state">
+                                <p>Your pantry is empty. Click "Add Item" to get started!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-suggestion" id="recipe-suggestion" style="display: none;">
+                        <h3>Recipe Suggestion</h3>
+                        <div id="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="section business">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Companies Choose This Solution</h2>
+                    <p class="section-subtitle">Business value that drives real results</p>
+                </div>
+                <div class="business-grid">
+                    <div class="business-card">
+                        <h3>Food Waste Crisis</h3>
+                        <p class="business-problem">$1 trillion lost annually worldwide</p>
+                        <p class="business-solution">Our system provides measurable waste reduction and cost savings.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3>Rising Grocery Costs</h3>
+                        <p class="business-problem">Direct consumer pain point affecting budget planning</p>
+                        <p class="business-solution">Helps users optimize purchases and maximize value.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3>Inventory Management</h3>
+                        <p class="business-problem">Core skill for warehouses, retail, logistics</p>
+                        <p class="business-solution">Demonstrates expertise in supply chain optimization.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3>Date Tracking</h3>
+                        <p class="business-problem">Critical for healthcare, compliance, supply chain</p>
+                        <p class="business-solution">Shows technical capability in time-sensitive systems.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3>Recipe Suggestions</h3>
+                        <p class="business-problem">Shows creativity and user value</p>
+                        <p class="business-solution">Demonstrates AI integration and user experience design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition" class="section nutrition">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Daily Nutrition Guide</h2>
+                    <p class="section-subtitle">Essential proteins and food classes for optimal health</p>
+                </div>
+                
+                <div class="nutrition-grid">
+                    <div class="nutrition-card">
+                        <h3>Protein Requirements</h3>
+                        <div class="protein-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Group</th>
+                                        <th>Daily Protein (g)</th>
+                                        <th>Best Sources</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Adults (General)</td>
+                                        <td>46-56</td>
+                                        <td>Lean meat, fish, eggs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Active Adults</td>
+                                        <td>60-80</td>
+                                        <td>Chicken, turkey, legumes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Athletes</td>
+                                        <td>80-120</td>
+                                        <td>Whey protein, lean beef</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Older Adults (65+)</td>
+                                        <td>60-70</td>
+                                        <td>Fish, dairy, nuts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vegetarians</td>
+                                        <td>50-65</td>
+                                        <td>Tofu, quinoa, beans</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-card">
+                        <h3>Daily Food Classes</h3>
+                        <div class="food-classes">
+                            <div class="food-class">
+                                <div class="food-icon">🥬</div>
+                                <h4>Vegetables</h4>
+                                <p>2-3 cups daily</p>
+                                <ul>
+                                    <li>Dark leafy greens</li>
+                                    <li>Colorful vegetables</li>
+                                    <li>Cruciferous veggies</li>
+                                </ul>
+                            </div>
+                            <div class="food-class">
+                                <div class="food-icon">🍎</div>
+                                <h4>Fruits</h4>
+                                <p>1.5-2 cups daily</p>
+                                <ul>
+                                    <li>Berries (antioxidants)</li>
+                                    <li>Citrus fruits</li>
+                                    <li>Whole fruits</li>
+                                </ul>
+                            </div>
+                            <div class="food-class">
+                                <div class="food-icon">🌾</div>
+                                <h4>Whole Grains</h4>
+                                <p>3-6 ounces daily</p>
+                                <ul>
+                                    <li>Oats, quinoa</li>
+                                    <li>Brown rice</li>
+                                    <li>Whole wheat</li>
+                                </ul>
+                            </div>
+                            <div class="food-class">
+                                <div class="food-icon">🥛</div>
+                                <h4>Dairy/Alternatives</h4>
+                                <p>2-3 cups daily</p>
+                                <ul>
+                                    <li>Low-fat milk</li>
+                                    <li>Greek yogurt</li>
+                                    <li>Fortified alternatives</li>
+                                </ul>
+                            </div>
+                            <div class="food-class">
+                                <div class="food-icon">🥩</div>
+                                <h4>Proteins</h4>
+                                <p>5-6.5 ounces daily</p>
+                                <ul>
+                                    <li>Lean meats</li>
+                                    <li>Fish & seafood</li>
+                                    <li>Plant proteins</li>
+                                </ul>
+                            </div>
+                            <div class="food-class">
+                                <div class="food-icon">🥑</div>
+                                <h4>Healthy Fats</h4>
+                                <p>5-7 teaspoons daily</p>
+                                <ul>
+                                    <li>Avocado, nuts</li>
+                                    <li>Olive oil</li>
+                                    <li>Seeds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-card">
+                        <h3>Health Benefits</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <h4>🏃‍♂️ Energy & Performance</h4>
+                                <p>Balanced proteins and carbs sustain energy levels throughout the day</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>💪 Muscle Maintenance</h4>
+                                <p>Adequate protein prevents muscle loss and supports growth</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>🧠 Brain Health</h4>
+                                <p>Omega-3s and antioxidants support cognitive function</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>🛡️ Immune Support</h4>
+                                <p>Vitamins and minerals strengthen immune system</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>⚖️ Weight Management</h4>
+                                <p>Protein and fiber promote satiety and healthy metabolism</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>🦴 Bone Health</h4>
+                                <p>Calcium and vitamin D support strong bones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-card">
+                        <h3>Daily Hydration</h3>
+                        <div class="hydration-info">
+                            <div class="hydration-chart">
+                                <h4>Water Intake Guidelines</h4>
+                                <div class="water-amounts">
+                                    <div class="water-item">
+                                        <span class="water-icon">💧</span>
+                                        <span class="amount">Men: 3.7L (15.5 cups)</span>
+                                    </div>
+                                    <div class="water-item">
+                                        <span class="water-icon">💧</span>
+                                        <span class="amount">Women: 2.7L (11.5 cups)</span>
+                                    </div>
+                                    <div class="water-item">
+                                        <span class="water-icon">🏃</span>
+                                        <span class="amount">Add 1.5L per hour of exercise</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hydration-tips">
+                                <h4>Hydration Tips</h4>
+                                <ul>
+                                    <li>Drink water before, during, and after meals</li>
+                                    <li>Keep a water bottle visible throughout the day</li>
+                                    <li>Eat water-rich foods (cucumber, watermelon)</li>
+                                    <li>Limit caffeine and alcohol intake</li>
+                                    <li>Monitor urine color (pale yellow = hydrated)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-card">
+                        <h3>Anti-Aging Foods</h3>
+                        <div class="anti-aging-foods">
+                            <div class="aging-food-category">
+                                <h4>🫐 Berries & Fruits</h4>
+                                <p>Rich in antioxidants that fight cellular aging</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Blueberries</span>
+                                    <span class="food-tag">Strawberries</span>
+                                    <span class="food-tag">Pomegranates</span>
+                                    <span class="food-tag">Acai berries</span>
+                                </div>
+                            </div>
+                            <div class="aging-food-category">
+                                <h4>🥑 Healthy Fats</h4>
+                                <p>Support brain health and reduce inflammation</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Avocado</span>
+                                    <span class="food-tag">Olive oil</span>
+                                    <span class="food-tag">Nuts</span>
+                                    <span class="food-tag">Seeds</span>
+                                </div>
+                            </div>
+                            <div class="aging-food-category">
+                                <h4>🥬 Leafy Greens</h4>
+                                <p>High in vitamins and minerals for skin health</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Spinach</span>
+                                    <span class="food-tag">Kale</span>
+                                    <span class="food-tag">Swiss chard</span>
+                                    <span class="food-tag">Arugula</span>
+                                </div>
+                            </div>
+                            <div class="aging-food-category">
+                                <h4>🐟 Omega-3 Rich Foods</h4>
+                                <p>Protect heart and brain, reduce wrinkles</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Salmon</span>
+                                    <span class="food-tag">Mackerel</span>
+                                    <span class="food-tag">Walnuts</span>
+                                    <span class="food-tag">Flaxseeds</span>
+                                </div>
+                            </div>
+                            <div class="aging-food-category">
+                                <h4>🧡 Orange Vegetables</h4>
+                                <p>Beta-carotene protects skin from sun damage</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Carrots</span>
+                                    <span class="food-tag">Sweet potatoes</span>
+                                    <span class="food-tag">Pumpkin</span>
+                                    <span class="food-tag">Bell peppers</span>
+                                </div>
+                            </div>
+                            <div class="aging-food-category">
+                                <h4>🍄 Medicinal Foods</h4>
+                                <p>Support immune system and cellular repair</p>
+                                <div class="food-examples">
+                                    <span class="food-tag">Turmeric</span>
+                                    <span class="food-tag">Ginger</span>
+                                    <span class="food-tag">Green tea</span>
+                                    <span class="food-tag">Dark chocolate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Pantry Manager</h2>
+                    <p class="section-subtitle">Our mission to reduce food waste globally</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Founded in 2026, Pantry Manager emerged from a simple observation: too much good food goes to waste while families struggle with rising grocery costs.</p>
+                        <p>Our team combines expertise in supply chain management, user experience design, and artificial intelligence to create solutions that make a real difference in people's daily lives.</p>
+                        <p>We believe that technology should help us live more sustainably while saving money and reducing stress around meal planning.</p>
+                        <div class="about-values">
+                            <div class="value">
+                                <h4>🌍 Sustainability</h4>
+                                <p>Reducing food waste helps the environment</p>
+                            </div>
+                            <div class="value">
+                                <h4>💰 Affordability</h4>
+                                <p>Making food management accessible to everyone</p>
+                            </div>
+                            <div class="value">
+                                <h4>🔧 Simplicity</h4>
+                                <p>Easy-to-use tools for complex problems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="impact-stats">
+                            <div class="impact-stat">
+                                <span class="impact-number">2M+</span>
+                                <span class="impact-label">Meals Saved</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-number">$3M</span>
+                                <span class="impact-label">Money Saved</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-number">50K</span>
+                                <span class="impact-label">Active Users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Ready to transform your kitchen management?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>enowbienow@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📱 Phone</h3>
+                            <p>+237652340197</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🏢 Office</h3>
+                            <p>123 Tech Street, Innovation City, 12345</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕐 Hours</h3>
+                            <p>Monday - Friday: 9AM - 6PM EST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo/Copilot_20260423_085317.png" alt="Pantry Manager Logo" class="footer-logo-image">
+                        <span class="logo-text">Pantry Manager</span>
+                    </div>
+                    <p>Smart kitchen management for modern families.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pantry Manager. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
